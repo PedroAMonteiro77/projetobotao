@@ -1,0 +1,6 @@
+PA2 - Tx
+PA3 - Rx
+PA4 - Input (botão)
+PA5 - Vermelho (leg RGB) Declarado como saida
+PA6 - Verde (Led RGB) Declarado como saida 
+PA7 - Azul (Led RGB) Declarado como saida 
