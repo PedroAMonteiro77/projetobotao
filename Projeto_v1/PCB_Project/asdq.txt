@@ -1,0 +1,8 @@
+o que anda precisa ser feito:
+definir os pinos que serao utilizados para cada componente
+
+duvidas:
+precisa de capacitor de desacoplamento para o modulo BLE?
+o que fazer com os pinos que nao serao utilizados?
+o divisor resistivo serve para o led ou vai precisar de um regulador?
+o micro aguenta um pouco mais de tensao ou travbalha exclusivamente com 3.3V ?
