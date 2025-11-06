@@ -1,81 +1,11 @@
-REQUISITOS GERAIS DO PROJETO
+#RESUMO
 
-1 - Requisitos gerais
-  . Projeto contara com 5 botões;
-  . Os botões devem ascender em 5 cores diferetes;
-  . Os botões devem ascender em tempos independetes ou simultaneos;
-  . Os botões serão independetes fisicamente;
-  . Terá 2 modos de funcionamento;
-  . A unidade de processamento sera um notebook;
-  . As informações serão armazenadas na unidade de processamento (notebook);
-  . Cada botão sera encapsulado;
-  . Cada botão deve possuir um microcontrolador da familia ARM (modelo STM32F103C8T6); 
-  . Cada botão deve possuir uma modulo BLE;
-  . Ser leve e robusto;
-  . Facil manuseio;
+Este projeto, uma iniciativa da Liga Acadêmica de Fisioterapia da UEL (FAFESP), está sendo desenvolvido por integrantes do Ramo Estudantil da UEL - IEEE. Surgiu a necessidade de uma ferramenta destinada ao uso no tratamento de atletas com lesão do Ligamento Cruzado Anterior (LCA). A uma infinidade de aplicações para esse projeto, pode ser usado para teste de reflexo em idosos e crianças, pode ser utilizado para tratamento de doenças que afetam a cordeação motora, entre outras varias tipos de aplicações.
 
-2 - Requisitos de usuario
-  . Será utilizado por pacientes tratando lezão de ligamento cruzado anterior;
-  . Pode ser usado para:
-    - Teste de reflexo;
-    - Teste de memória;
-  . Start via notebook;
-  . O botão devera ser preciosado com o pé ou com a mão;
-  . Ao fim do seção sera gerado um relatorio de desempenho;
-  . O usuario que ira manusiar;
+O sistema é composto por cinco botões independentes que operam em dois modos distintos. No primeiro, o modo aleatório, o usuário inicia uma sessão e ativa um cronômetro regressivo com tempo ajustável; um botão acende aleatoriamente e só se apaga ao ser pressionado, acionando o próximo, e o processo se repete até o tempo se esgotar. O segundo é o modo de distinção, onde todos os cinco botões acendem simultaneamente, porém, um deles com uma cor diferente; o usuário deve pressionar apenas o botão de cor distinta para que uma nova variação seja apresentada e isso irá se repetir até o fim do tempo proposto pelo usuário.
 
-3 - Requisitos mecanicos
-  . Deve ser robusto uma vez que sera utilizado com o peso/força;
-  . tem o seu tamanho limitado;
-  . Deve ser facil deslocamento;
-  . A sua base deve ser antiderrapante;
-  . O seu topo deve ser translucido;
-  . O sensor de toque deve ter um range de acionamento limitado
-  . Botão de automação;
-  . Os 5 botões devem se acoplar;
-  . Deve ser feito um suporte de proteção para a bateria;
-  . O projeto não é a prova dagua;
-  . O projeto não permite quedas de grandes alturas;
-  
-4 - Requisitos elétricos
-  . Comunicação:
-    - Cada botão deve ter um modulo ble;
-    - Os botões irão trocar informações com o notebook pelo bluetooh;
-    - Notebook deve funcionar como uma central;
-    - O notebook deve mandar e receber informações dos botões simultaneamentes; 
-  . Micro:
-    - O microcontrolador deve ser classificado como uma máquina de 16 bits ou maior;
-    - O microcontrolador deve ser alimentado com uma tensão não superior a 3.3V;
-    - O microcontrolador deve possuir pelo menos um periférico do tipo USART;
-    - O microcontrolador deve possuir pelo menos um periférico do tipo I2C;
-    - O microcontrolador deve possuir, pelo menos, um periférico do tipo SPI ;
-    - O microcontrolador deve possuir, pelo menos, 8 portas GPIO livres;
-    - O microcontrolador deve possuir suporte a interrupções;
-    - O microcontrolador deve possuir memórias do tipo FLASH e SRAM;
-    - O microcontrolador deve possuir suporte a gravação e debugação;    
-    - É desejável que o microcontrolador possua um periférico DMA;
-    - Ferramentas, IDE, Toolchain e Bibliotecas;
-    - Suporte do Fabricante e Documentação;
-    - Deve ser utilizado cristal externo;
-  . Alimentação:
-    - Cada botão tera uma bateria;
-    - A bateria deve ser carrecado por um cabo USB - C;
-    - Cada botão sera carregado independentemente;
-    - Cada botão tera um modulo de carregamento;
-    - Deve haver reguladores para as diferentes tensões dos componentes;
-    - O modulo deve conter um monitorador de bateria;
-    - Cada botão deve conter um led indicador de bateria;
-  . Cada botão tera um ou mais led RGB de alta potencia;
-  . Cada led sera alimentado por x volts;
-  . Led deve ser anodo comum;
-  . Botão funcionara como push-pull
-  
-5 - Requisito de software
-  . O software sera de facil uso;
-  . O software tera que dar inicio aos modos de operação;
-  . Após o inicio do modo de operação o software tera que acionar um timer para contabilizar o tempo da seção;
-  . O software tera que guardar os dados recebidos dos botões;
-  . O software tera que amazenar os tempos das seções;
-  . Após um periodo determinado pelo usuario o sofware tera que gerar uma planilha de desempenho;
-  
-  
+Cada botão ira conter LEDs coloridos, baterias, modulo  Bluetooth Low Energy (BLE), um botão industrial. Será usado um notebook como centro de comando, onde o usário poderá dar inicio a seção, escolher o tempo da seção, definir o modo de operação além de armazenar os dados obtidos ao termino do uso. Ao fim do tratamento do paciente, ou de um tempo determinado, sera gerado uma planilha com o progresso de cada paciente, baseado nos dados obtidos ao fim de cada seção.
+
+O escopo do projeto abrange desde a concepção do hardware, utilizando o microcontrolador STM32F103C8T6 como componente central, até o desenvolvimento de uma placa de circuito impresso (PCB) dedicada. A estrutura física dos botões será modelada no software SolidWorks e fabricada, possivelmente por impressão 3D, para garantir a robustez e a proteção dos componentes eletrônicos internos, pois os pacientes iram muitas vezes utilizar o pé para pressionar o botão e para garantir a praticidade a estrutura tem que ser leve e pequena.
+
+O objetivo principal é entregar um protótipo funcional, e de fácil uso, uma vez que quem ira manusear serão muitas vezes pessoas de idade, ou pessoas que não participaram da criação do projeto. simultaneamente, permitir que os estudantes aprofundem seus conhecimentos em sistemas embarcados, desenvolvimento de PCBs e utilização de softwares.
