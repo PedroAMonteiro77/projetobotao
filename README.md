@@ -1,4 +1,4 @@
-#RESUMO
+# RESUMO
 
 Este projeto, uma iniciativa da Liga Acadêmica de Fisioterapia da UEL (FAFESP), está sendo desenvolvido por integrantes do Ramo Estudantil da UEL - IEEE. Surgiu a necessidade de uma ferramenta destinada ao uso no tratamento de atletas com lesão do Ligamento Cruzado Anterior (LCA). A uma infinidade de aplicações para esse projeto, pode ser usado para teste de reflexo em idosos e crianças, pode ser utilizado para tratamento de doenças que afetam a cordeação motora, entre outras varias tipos de aplicações.
 
